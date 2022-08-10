@@ -8,6 +8,7 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
 import androidx.core.widget.NestedScrollView
+import kotlin.math.abs
 import kotlin.math.absoluteValue
 
 class VerticalScrollPager: NestedScrollView {
@@ -65,13 +66,13 @@ class VerticalScrollPager: NestedScrollView {
         }
     }
 
-    override fun onTouchEvent(ev: MotionEvent): Boolean {
-        return if (isScrollable()) {
-            super.onTouchEvent(ev)
-        } else {
-            false
-        }
-    }
+//    override fun onTouchEvent(ev: MotionEvent): Boolean {
+//        return if (isScrollable()) {
+//            super.onTouchEvent(ev)
+//        } else {
+//            false
+//        }
+//    }
 
     /**
      * Function that tells you if you are currently scrollable.
@@ -97,7 +98,7 @@ class VerticalScrollPager: NestedScrollView {
      * Obtain the absolute coordinates of the top of the this View.
      */
     private fun computeDistanceToView(view: View): Int {
-        return Math.abs(calculateRectOnScreen(this).top - (this.scrollY + calculateRectOnScreen(view).top))
+        return abs(calculateRectOnScreen(this).top - (this.scrollY + calculateRectOnScreen(view).top))
     }
 
     /**
