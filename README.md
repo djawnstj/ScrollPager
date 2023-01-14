@@ -5,8 +5,25 @@
 
 This is Pager using ScrollView. (Like ViewPager)
 
+# impl
+
 # How to use?
 1. You should implement this 'lb' in your project.
+  - in yout settings.gradle
+``` groovy
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+  - in yout byild.gradle (app level)
+``` groovy
+	dependencies {
+	        implementation 'com.github.djawnstj:ScrollPager:Tag'
+	}
+```
 2. Call a scroll function when you want to.
 in my case...
 ``` kotlin
