@@ -28,7 +28,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
-        freeCompilerArgs += 'Xexplicit-api=strict'
+//        freeCompilerArgs += 'Xexplicit-api=strict'
     }
     resourcePrefix 'scp_'
 }
@@ -44,7 +44,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.github.djawnstj'
                 artifactId = 'ScrollPager'
-                version = '1.0.04-SNAPSHOT'
+                version = '1.0.05-SNAPSHOT'
             }
             // Creates a Maven publication called “debug”.
 //            debug(MavenPublication) {
