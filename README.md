@@ -8,7 +8,7 @@ This is Pager using ScrollView. (Like ViewPager)
 
 # How to use?
 1. You should implement this 'lb' in your project.
-   - in yout settings.gradle
+   - in your settings.gradle
     ``` groovy
     allprojects {
         repositories {
@@ -17,7 +17,7 @@ This is Pager using ScrollView. (Like ViewPager)
         }
     }
     ```
-   - in yout byild.gradle (app level)
+   - in your build.gradle (app level)
     ``` groovy
     dependencies {
         implementation 'com.github.djawnstj:ScrollPager:Tag'
