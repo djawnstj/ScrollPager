@@ -1,4 +1,4 @@
-package com.juntech.scrollpager
+package com.github.djawnstj
 
 import android.animation.ObjectAnimator
 import android.content.Context

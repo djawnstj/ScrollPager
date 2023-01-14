@@ -1,4 +1,4 @@
-package com.juntech.scrollpager
+package com.github.djawnstj
 
 import org.junit.Test
 
