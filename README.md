@@ -20,7 +20,7 @@ This is Pager using ScrollView. (Like ViewPager)
    - in your build.gradle (app level)
     ``` groovy
     dependencies {
-        implementation 'com.github.djawnstj:ScrollPager:Tag'
+        implementation 'com.github.djawnstj:ScrollPager:v1.0.0'
     }
     ```
 2. Call a scroll function when you want to.
