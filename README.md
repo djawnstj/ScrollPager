@@ -7,7 +7,7 @@ This is Pager using ScrollView. (Like ViewPager)
 [![](https://jitpack.io/v/djawnstj/ScrollPager.svg)](https://jitpack.io/#djawnstj/ScrollPager)
 
 # How to use?
-1. You should implement this 'lb' in your project.
+1. You should implement in your project.
    - in your settings.gradle
     ``` groovy
     allprojects {
