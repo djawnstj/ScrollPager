@@ -33,28 +33,30 @@ android {
     resourcePrefix 'scp_'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            // Creates a Maven publication called "release".
-            release(MavenPublication) {
-                // Applies the component for the release build variant.
-                from components.release
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            // Creates a Maven publication called "release".
+//            release(MavenPublication) {
+//                // Applies the component for the release build variant.
+//                from components.java
+//
+//                // You can then customize attributes of the publication as shown below.
+//                groupId = 'com.github.djawnstj'
+//                artifactId = ''
+//                version = '1.0.2'
+//            }
+//        }
+//    }
+//}
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'org.github.djawnstj'
+            artifactId = ''
+            version = '1.0.22'
 
-                // You can then customize attributes of the publication as shown below.
-                groupId = 'com.github.djawnstj'
-                artifactId = ''
-                version = '1.0.2'
-            }
-            // Creates a Maven publication called “debug”.
-            debug(MavenPublication) {
-                // Applies the component for the debug build variant.
-                from components.debug
-
-                groupId = 'com.github.djawnstj'
-                artifactId = 'final-debug'
-                version = '1.0.2'
-            }
+//            from components.java
         }
     }
 }
