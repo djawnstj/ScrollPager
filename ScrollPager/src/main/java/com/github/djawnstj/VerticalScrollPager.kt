@@ -34,9 +34,6 @@ class VerticalScrollPager: NestedScrollView {
         }
 
         override fun onScroll(p0: MotionEvent?, p1: MotionEvent?, p2: Float, p3: Float): Boolean {
-            p0?.y
-            p1?.y
-
             return if(p0 != null && p1 != null ) {
                 val startX = p0.x
                 val endX = p1.x
@@ -65,14 +62,6 @@ class VerticalScrollPager: NestedScrollView {
             return false
         }
     }
-
-//    override fun onTouchEvent(ev: MotionEvent): Boolean {
-//        return if (isScrollable()) {
-//            super.onTouchEvent(ev)
-//        } else {
-//            false
-//        }
-//    }
 
     /**
      * Function that tells you if you are currently scrollable.
