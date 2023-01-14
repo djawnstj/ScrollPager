@@ -12,6 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-include ':app'
+include ':ScrollPager'
 rootProject.name = "ScrollPager"
-project(":app").name = "ScrollPager"
