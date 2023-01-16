@@ -11,22 +11,60 @@ It works like ViewPager, but it works vertically.
 # How to use?
 1. You should implement in your project.
    - in your settings.gradle
-    ``` groovy
-    allprojects {
-        repositories {
-            ...
-            maven { url 'https://jitpack.io' }
-        }
-    }
-    ```
+       ``` groovy
+       allprojects {
+           repositories {
+               ...
+               maven { url 'https://jitpack.io' }
+           }
+       }
+       ```
    - in your build.gradle (app level)
-    ``` groovy
-    dependencies {
-        implementation 'com.github.djawnstj:ScrollPager:v1.0.0'
-    }
-    ```
-2. Call a scroll function when you want to.
-in my case...
-``` kotlin
-binding.scrollPager.scrollToView(binding.textView2)
-```
+       ``` groovy
+       dependencies {
+           implementation 'com.github.djawnstj:ScrollPager:v1.1.0'
+       }
+       ```
+2. add layout xml like...
+   ``` xml
+      <com.github.djawnstj.VerticalScrollPager
+         android:id="@+id/scrollPager"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+           
+      </com.github.djawnstj.VerticalScrollPager>
+   ```
+3. add child view
+   - in xml
+      ``` xml
+      <com.github.djawnstj.VerticalScrollPager
+         android:id="@+id/scrollPager"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+      
+      <ImageView
+         android:id="@+id/imageView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>
+         
+         ...
+           
+      </com.github.djawnstj.VerticalScrollPager>
+      ```
+   - in kotlin
+      ``` kotlin
+      val scrollPager = findViewById<VerticalScrollPager>(R.id.scrollPager)
+      val imageView = ImageView(this)
+      
+      scrollPager.addView(imageView)
+      ```
+4. Call a scroll function when you want to.
+   ``` kotlin
+   binding.scrollPager.scrollToView(binding.imageView)
+   ```
+   
+# Change Log
+- ` 1.1.0 ` :
+  1. You no longer need to add top-level layouts.
+  2. Force to change the size of child view (match_parent)
+- ` 1.0.2 ` : Troubleshooting library implementation
