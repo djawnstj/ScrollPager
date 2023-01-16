@@ -27,12 +27,12 @@ It works like ViewPager, but it works vertically.
        ```
 2. add layout xml like...
    ``` xml
-      <com.github.djawnstj.VerticalScrollPager
-         android:id="@+id/scrollPager"
-         android:layout_width="match_parent"
-         android:layout_height="match_parent">
+   <com.github.djawnstj.VerticalScrollPager
+      android:id="@+id/scrollPager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
            
-      </com.github.djawnstj.VerticalScrollPager>
+   </com.github.djawnstj.VerticalScrollPager>
    ```
 3. add child view
    - in xml
@@ -42,15 +42,15 @@ It works like ViewPager, but it works vertically.
          android:layout_width="match_parent"
          android:layout_height="match_parent">
       
-      <ImageView
-         android:id="@+id/imageView"
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"/>
-         
-         ...
+         <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+                
+            ...
            
-      </com.github.djawnstj.VerticalScrollPager>
-      ```
+     </com.github.djawnstj.VerticalScrollPager>
+     ```
    - in kotlin
       ``` kotlin
       val scrollPager = findViewById<VerticalScrollPager>(R.id.scrollPager)
