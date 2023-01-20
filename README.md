@@ -22,7 +22,7 @@ It works like ViewPager, but it works vertically.
    - in your build.gradle (app level)
        ``` groovy
        dependencies {
-           implementation 'com.github.djawnstj:ScrollPager:1.1.0-SNAPSHOT'
+           implementation 'com.github.djawnstj:ScrollPager:1.1.0'
        }
        ```
 2. add layout xml like...
